@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nadhim Alim</title>
+    <link rel="icon" href="./img/club.png" type="image/x-icon" class="rounded-2xl" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  </head>
+  <body>
+    <audio autoplay>
+      <source src="./img/nemen.mp3" type="audio/mp3" />
+      <source src="./img/music.mp3" type="audio/mp3" />
+    </audio>
+
+    <!-- <div id="cursor"></div> -->
+
+    <div id="cursor"></div>
+
+    <!-- header -->
+    <header>
+      <a href="#" class="logo">Nadhim <span>Alim</span></a>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#pendidikan">My Education</a></li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" role="button">Portflio</a>
+          <div class="dropdown-content">
+            <a href="#skill">Skill</a>
+            <a href="#pengalaman">Pengalaman</a>
+            <a href="#prestasi">Prestasi</a>
+          </div>
+        </li>
+
+        <li><a href="./portal/login.html">Portal</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+
+      <div class="top-btnn">
+        <a href="#" class="h-btn">Follow me</a>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero" id="home">
+      <div class="main-content">
+        <h4>Hi, Guys</h4>
+        <h1 id="typed-text">
+          <span id="typed-text-1"></span><span id="typed-text-2"></span>
+        </h1>
+
+        <p>
+          Halo! Saya seorang pengembang web dengan latar belakang di bidang IT.
+          Saya tertarik dalam pengembangan aplikasi web dan eksplorasi teknologi
+          baru. Saya percaya bahwa teknologi memberikan peluang tanpa batas
+          untuk belajar dan berkembang.
+        </p>
+
+        <div class="social">
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          <a href="#"><i class="ri-youtube-fill"></i></a>
+          <a href="#"><i class="ri-tiktok-fill"></i></a>
+          <a href="#"><i class="ri-whatsapp-fill"></i></a>
+        </div>
+
+        <div class="main-btn">
+          <a href="#" class="btn">Hire Me</a>
+          <a href="#" class="btn btn2">Download CV</a>
+          <a href="#" id="follow-count" class="btn h-btn1">Pengikut Anda</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- education section -->
+    <section class="bg-white" id="pendidikan">
+      <div
+        class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24"
+      >
+        <div
+          class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8"
+        >
+          <h2
+            class="max-w-xl text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl text-red-500"
+          >
+            My Education
+          </h2>
+
+          <div class="mt-8 flex gap-4 lg:mt-0">
+            <button
+              aria-label="Previous slide"
+              id="keen-slider-previous"
+              class="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 rtl:rotate-180"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+
+            <button
+              aria-label="Next slide"
+              id="keen-slider-next"
+              class="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+            >
+              <svg
+                class="size-5 rtl:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5l7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
+          <div id="keen-slider" class="keen-slider">
+            <div class="keen-slider__slide">
+              <blockquote
+                class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+              >
+                <div>
+                  <div class="flex gap-0.5 text-green-500">
+                    <img
+                      src="./pendidikan/sdit.png"
+                      alt="SDIT"
+                      class="rounded-2xl"
+                    />
+                  </div>
+
+                  <div class="mt-4">
+                    <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                      SDIT Baitussalam Prambanan
+                    </p>
+
+                    <p class="mt-4 leading-relaxed text-gray-700">
+                      Pondok, Pesantren Modern Baitussalam, Jl. Pulerejo,
+                      Kranggan, Bokoharjo, Kec. Prambanan, Kabupaten Sleman,
+                      Daerah Istimewa Yogyakarta 55572
+                    </p>
+                  </div>
+                </div>
+
+                <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                  &mdash; @nadhimalim
+                </footer>
+              </blockquote>
+            </div>
+
+            <div class="keen-slider__slide">
+              <blockquote
+                class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+              >
+                <div>
+                  <div class="flex gap-0.5 text-green-500">
+                    <img
+                      src="./pendidikan/smp.png"
+                      alt="smp"
+                      class="rounded-2xl"
+                    />
+                  </div>
+
+                  <div class="mt-4">
+                    <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                      SMP N 2 Piyungan
+                    </p>
+
+                    <p class="mt-4 leading-relaxed text-gray-700">
+                      Babadan, Sitimulyo, Kec. Piyungan, Kabupaten Bantul,
+                      Daerah Istimewa Yogyakarta 55792
+                    </p>
+                  </div>
+                </div>
+
+                <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                  &mdash; @nadhimalim
+                </footer>
+              </blockquote>
+            </div>
+
+            <div class="keen-slider__slide">
+              <blockquote
+                class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+              >
+                <div>
+                  <div class="flex gap-0.5 text-green-500">
+                    <img
+                      src="./pendidikan/man.png"
+                      alt="MAN"
+                      class="rounded-2xl"
+                    />
+                  </div>
+
+                  <div class="mt-4">
+                    <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                      MAN 3 Bantul
+                    </p>
+
+                    <p class="mt-4 leading-relaxed text-gray-700">
+                      Jl. Imogiri Tim. No.Km 10, Ketongo, Wonokromo, Kec.
+                      Pleret, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55791
+                    </p>
+                  </div>
+                </div>
+
+                <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                  &mdash; @nadhimalim
+                </footer>
+              </blockquote>
+            </div>
+            <div class="keen-slider__slide">
+              <blockquote
+                class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+              >
+                <div>
+                  <div class="flex gap-0.5 text-green-500">
+                    <img
+                      src="./pendidikan/uad.png"
+                      alt="UAD"
+                      class="rounded-2xl"
+                    />
+                  </div>
+
+                  <div class="mt-4">
+                    <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                      Universitas Ahmad Dahlan
+                    </p>
+
+                    <p class="mt-4 leading-relaxed text-gray-700">
+                      Jl. Ringroad Selatan, Kragilan, Tamanan, Kec. Banguntapan,
+                      Kabupaten Bantul, Daerah Istimewa Yogyakarta 55191
+                    </p>
+                  </div>
+                </div>
+
+                <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                  &mdash; @nadhimalim
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- kata kata motivasi -->
+    <section class="katakatamotivasi">
+      <div class="moti">
+        <h2 class="text-center text-2xl">
+          "Selama masih ada di atas tanah, kita punya kesempatan berharga:
+          beribadah dan meraih sukses. Setiap detik adalah peluang emas. Jangan
+          sia-siakan waktu, karena di dalamnya terdapat jalan menuju impian dan
+          kesuksesan." - Nadhim Alim
+        </h2>
+      </div>
+    </section>
+
+    <!-- skill section -->
+    <section class="bg-white py-16" id="skill">
+      <div class="container mx-auto px-4">
+        <div class="text-center">
+          <h2 class="text-4xl font-bold text-gray-800 mb-8">Skills</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Skill Card -->
+          <div class="bg-white shadow-md rounded-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Web Design</h3>
+            <ul class="list-disc list-inside">
+              <img src="./img/webdesign.jpeg" alt="" class="rounded-2xl" />
+            </ul>
+          </div>
+          <!-- Skill Card -->
+          <div class="bg-white shadow-md rounded-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Programming Languages</h3>
+            <ul class="list-disc list-inside">
+              <img src="./img/skill.png" alt="" />
+            </ul>
+          </div>
+          <!-- Skill Card -->
+          <div class="bg-white shadow-md rounded-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Framework CSS</h3>
+            <ul class="list-disc list-inside">
+              <img src="./img/taib.jpg" alt="" class="rounded-2xl" />
+            </ul>
+          </div>
+          <!-- Skill Card -->
+          <div class="bg-white shadow-md rounded-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Content Creator</h3>
+            <ul class="list-disc list-inside">
+              <img src="./img/kreator.jpeg" alt="" />
+            </ul>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Belum Update Skill</h3>
+            <ul class="list-disc list-inside">
+              <img src="./sertifikat/belumada.png" alt="" />
+            </ul>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Belum Update Skill</h3>
+            <ul class="list-disc list-inside">
+              <img src="./sertifikat/belumada.png" alt="" />
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- pengalaman section -->
+    <section class="bg-white" id="pengalaman">
+      <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <h2
+          class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+        >
+          Pengalaman
+        </h2>
+
+        <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+          <blockquote
+            class="cardpengalaman flex h-full flex-col justify-between p-6 shadow-sm sm:p-8 lg:p-12"
+          >
+            <div class="flex justify-center items-center">
+              <img
+                src="./sertifikat/sertifikat1.png"
+                alt="ser1"
+                class="rounded-2xl"
+              />
+            </div>
+
+            <footer
+              class="mt-4 text-sm font-medium text-gray-700 sm:mt-6 text-center"
+            >
+              Panitia Hari Prodi Informatika UAD divisi Sponsorship
+            </footer>
+            <button
+              class="cardpengalamanbtn text-white font-bold py-2 px-4 rounded-full"
+            >
+              Lihat Selengkapnya
+            </button>
+          </blockquote>
+
+          <blockquote
+            class="cardpengalaman flex h-full flex-col justify-between p-6 shadow-sm sm:p-8 lg:p-12"
+          >
+            <div class="flex justify-center items-center">
+              <img
+                src="./sertifikat/sertifkat2.png"
+                alt="ser1"
+                class="rounded-2xl"
+              />
+            </div>
+
+            <footer
+              class="mt-4 text-sm font-medium text-gray-700 sm:mt-6 text-center"
+            >
+              Panitia Bulan Ramadhan 2024 Informatika Divisi Sponsorship
+            </footer>
+            <button
+              class="cardpengalamanbtn text-white font-bold py-2 px-4 rounded-full"
+            >
+              Lihat Selengkapnya
+            </button>
+          </blockquote>
+
+          <blockquote
+            class="cardpengalaman flex h-full flex-col justify-between p-6 shadow-sm sm:p-8 lg:p-12"
+          >
+            <div class="flex justify-center items-center">
+              <img
+                src="./sertifikat/belumada.png"
+                alt="ser1"
+                class="rounded-2xl"
+              />
+            </div>
+
+            <footer
+              class="mt-4 text-sm font-medium text-gray-700 sm:mt-6 text-center"
+            >
+              Anggota HIPMI PT UAD Divisi Media Informasi dan Propaganda
+            </footer>
+            <button
+              class="cardpengalamanbtn text-white font-bold py-2 px-4 rounded-full"
+            >
+              Lihat Selengkapnya
+            </button>
+          </blockquote>
+
+          <blockquote
+            class="cardpengalaman flex h-full flex-col justify-between p-6 shadow-sm sm:p-8 lg:p-12"
+          >
+            <div class="flex justify-center items-center">
+              <img src="./img/pmr.png" alt="ser1" class="rounded-2xl" />
+            </div>
+
+            <footer
+              class="mt-4 text-sm font-medium text-gray-700 sm:mt-6 text-center"
+            >
+              Anggota PMR MAN 3 Bantul Periode 2021 - 2022
+            </footer>
+            <button
+              class="cardpengalamanbtn text-white font-bold py-2 px-4 rounded-full"
+            >
+              Lihat Selengkapnya
+            </button>
+          </blockquote>
+
+          <blockquote
+            class="cardpengalaman flex h-full flex-col justify-between p-6 shadow-sm sm:p-8 lg:p-12"
+          >
+            <div class="flex justify-center items-center">
+              <img
+                src="./sertifikat/belumada.png"
+                alt="ser1"
+                class="rounded-2xl"
+              />
+            </div>
+
+            <footer
+              class="mt-4 text-sm font-medium text-gray-700 sm:mt-6 text-center"
+            >
+              Belum Ada
+            </footer>
+            <button
+              class="cardpengalamanbtn text-white font-bold py-2 px-4 rounded-full"
+            >
+              Lihat Selengkapnya
+            </button>
+          </blockquote>
+
+          <blockquote
+            class="cardpengalaman flex h-full flex-col justify-between p-6 shadow-sm sm:p-8 lg:p-12"
+          >
+            <div class="flex justify-center items-center">
+              <img
+                src="./sertifikat/belumada.png"
+                alt="ser1"
+                class="rounded-2xl"
+              />
+            </div>
+
+            <footer
+              class="mt-4 text-sm font-medium text-gray-700 sm:mt-6 text-center"
+            >
+              Belum Ada
+            </footer>
+            <button
+              class="cardpengalamanbtn text-white font-bold py-2 px-4 rounded-full"
+            >
+              Lihat Selengkapnya
+            </button>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- prestasi -->
+    <section class="section-prestasi" id="prestasi">
+      <h3 class="prestasih2">Prestasi</h3>
+      <div class="prestasi-container">
+        <div class="prestasi-item">
+          <div class="face front">
+            <div class="flex justify-center items-center">
+              <img
+                src="./sertifikat/belumada.png"
+                alt="Prestasi 1"
+                class="rounded-2xl items-center"
+              />
+            </div>
+            <h3 class="prestasicard">Prestasi 1</h3>
+          </div>
+          <div class="face back">
+            <h3>Prestasi 1</h3>
+            <div class="prestasitulisan">
+              <p>
+                Maaf, saya belum memiliki prestasi apapun saat ini. Namun, saya
+                terus berusaha dan bekerja keras untuk mencapai berbagai
+                pencapaian di masa depan. Saya yakin dengan
+                komitmen yang kuat, saya akan mampu meraih prestasi yang
+                membanggakan di waktu yang akan datang.
+              </p>
+            </div>
+            <div class="linkcard">
+              <a href="#">Lihat Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prestasi-item">
+          <div class="face front">
+            <div class="flex justify-center items-center">
+              <img
+                src="./sertifikat/belumada.png"
+                alt="Prestasi 2"
+                class="rounded-2xl"
+              />
+            </div>
+            <h3 class="prestasicard">Prestasi 2</h3>
+          </div>
+          <div class="face back">
+            <h3>Prestasi 2</h3>
+            <div class="prestasitulisan">
+              <p>
+                Maaf, saya belum memiliki prestasi apapun saat ini. Namun, saya
+                terus berusaha dan bekerja keras untuk mencapai berbagai
+                pencapaian di masa depan. Saya yakin dengan
+                komitmen yang kuat, saya akan mampu meraih prestasi yang
+                membanggakan di waktu yang akan datang.
+              </p>
+            </div>
+            <div class="linkcard">
+              <a href="#">Lihat Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prestasi-item">
+          <div class="face front">
+            <div class="flex justify-center items-center">
+              <img
+                src="./sertifikat/belumada.png"
+                alt="Prestasi 3"
+                class="rounded-2xl"
+              />
+            </div>
+            <h3 class="prestasicard">Prestasi 3</h3>
+          </div>
+          <div class="face back">
+            <h3>Prestasi 3</h3>
+            <div class="prestasitulisan">
+              <p>
+                Maaf, saya belum memiliki prestasi apapun saat ini. Namun, saya
+                terus berusaha dan bekerja keras untuk mencapai berbagai
+                pencapaian di masa depan. Saya yakin dengan
+                komitmen yang kuat, saya akan mampu meraih prestasi yang
+                membanggakan di waktu yang akan datang.
+              </p>
+            </div>
+            <div class="linkcard">
+              <a href="#">Lihat Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="kontak bg-white" id="kontak">
+      <div class="center-text1">
+        <h2>Berikan Saya<span class="kontakme"> Masukkan</span></h2>
+      </div>
+
+      <div class="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="c4a7fd4c-2f56-493d-ac96-bd83ffe205a8"
+          />
+
+          <input
+            type="text"
+            name="nama"
+            placeholder="Masukkan Nama Anda"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Masukkan Email Anda"
+            required
+          />
+          <textarea
+            name="pesan"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Masukkan Pesan Anda"
+            required
+          ></textarea>
+          <input
+            type="submit"
+            name="submit"
+            value="Kirim Pesan"
+            class="sendbtn"
+          />
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="copyright">
+        <p>&copy; 2024 Nadhim Alim, All Rights Reserved</p>
+      </div>
+      <a href="#home" class="scroll-top">
+        <i class="ri-arrow-up-s-fill"></i>
+      </a>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="./tailwind.js" type="module"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
